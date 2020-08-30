@@ -6,6 +6,7 @@ public class control : MonoBehaviour
 {
     public static int HP;
     bool check;
+    bool move;//動けるかどうか
     public float speed = 3.0f;
     public float span = 3f;//間隔
     public float currentTime;//時間計測
@@ -13,6 +14,7 @@ public class control : MonoBehaviour
     void Start()
     {
         check = false;
+        move = true;
         HP = 100;
         currentTime = 0;
     }
@@ -20,21 +22,24 @@ public class control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("up") || Input.GetKey(KeyCode.W))
+        if (move)
         {
-            transform.position += transform.forward * speed * Time.deltaTime;
-        }
-        if (Input.GetKey("down") || Input.GetKey(KeyCode.S))
-        {
-            transform.position -= transform.forward * speed * Time.deltaTime;
-        }
-        if (Input.GetKey("right") || Input.GetKey(KeyCode.D))
-        {
-            transform.position += transform.right * speed * Time.deltaTime;
-        }
-        if (Input.GetKey("left") || Input.GetKey(KeyCode.A))
-        {
-            transform.position -= transform.right * speed * Time.deltaTime;
+            if (Input.GetKey("up") || Input.GetKey(KeyCode.W))
+            {
+                transform.position += transform.forward * speed * Time.deltaTime;
+            }
+            if (Input.GetKey("down") || Input.GetKey(KeyCode.S))
+            {
+                transform.position -= transform.forward * speed * Time.deltaTime;
+            }
+            if (Input.GetKey("right") || Input.GetKey(KeyCode.D))
+            {
+                transform.position += transform.right * speed * Time.deltaTime;
+            }
+            if (Input.GetKey("left") || Input.GetKey(KeyCode.A))
+            {
+                transform.position -= transform.right * speed * Time.deltaTime;
+            }
         }
 
         Debug.Log(HP);
@@ -62,9 +67,15 @@ public class control : MonoBehaviour
         if (HP >= 100)
         {
             HP = 100;
-        }else if (HP < 0)
+        }
+        if (HP < 0)
         {
             HP = 0;
+            move = false;
+        }
+        else
+        {
+            move = true;
         }
     }
 
