@@ -8,6 +8,7 @@ public class control : MonoBehaviour
     bool check;
     bool move;//動けるかどうか
     public float speed = 3.0f;
+    public float LRspeed = 3.0f;
     public float span = 3f;//間隔
     public float currentTime;//時間計測
     // Start is called before the first frame update
@@ -34,11 +35,23 @@ public class control : MonoBehaviour
             }
             if (Input.GetKey("right") || Input.GetKey(KeyCode.D))
             {
-                transform.position += transform.right * speed * Time.deltaTime;
+                transform.position += transform.right * LRspeed * Time.deltaTime;
             }
             if (Input.GetKey("left") || Input.GetKey(KeyCode.A))
             {
-                transform.position -= transform.right * speed * Time.deltaTime;
+                transform.position -= transform.right * LRspeed * Time.deltaTime;
+            }
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                Debug.Log("スペースキーが押されています");
+                speed = 10.0f;
+                LRspeed = 1.0f;
+            }
+            else
+            {
+                speed = 3.0f;
+                LRspeed = 3.0f;
             }
         }
 
@@ -49,7 +62,6 @@ public class control : MonoBehaviour
             if (currentTime > span)
             {
                 //currentTime = 0f;
-                Debug.Log("回復します");
                 HP += 1;
             }
         }
@@ -59,7 +71,6 @@ public class control : MonoBehaviour
             if (currentTime > span)
             {
                 //currentTime = 0f;
-                Debug.Log("ダメージを受けます");
                 HP -= 1;
             }
         }
