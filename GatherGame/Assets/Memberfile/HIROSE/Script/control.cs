@@ -11,7 +11,6 @@ public class control : MonoBehaviour
     public float LRspeed = 3.0f;
     public float span = 3f;//間隔
     public float currentTime;//時間計測
-    public float CharacterMotor;
     // Start is called before the first frame update
     void Start()
     {
