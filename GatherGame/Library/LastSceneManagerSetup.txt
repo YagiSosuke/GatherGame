@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Memberfile/HIROSE/Scenes/Play.unity
+=======
+- path: Assets/Memberfile/Kobayashi/Scenes/Type-1.unity
+>>>>>>> 71d737cd12e8a9022ee11e8145d6cdabdff79007
   isLoaded: 1
   isActive: 1
