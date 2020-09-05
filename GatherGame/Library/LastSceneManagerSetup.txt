@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Memberfile/Kobayashi/Type-1.unity
+- path: Assets/Memberfile/Kobayashi/Scenes/Type-1.unity
   isLoaded: 1
   isActive: 1
