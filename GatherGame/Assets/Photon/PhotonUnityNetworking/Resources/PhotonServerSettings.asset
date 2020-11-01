@@ -16,9 +16,9 @@ MonoBehaviour:
     AppIdRealtime: 7339ba09-c689-4b22-a3ba-7b9c2f84cebc
     AppIdChat: 
     AppIdVoice: 
-    AppVersion: 
+    AppVersion: 1.0
     UseNameServer: 1
-    FixedRegion: 
+    FixedRegion: jp
     Server: 
     Port: 0
     ProxyServer: 
@@ -32,7 +32,12 @@ MonoBehaviour:
   EnableSupportLogger: 1
   RunInBackground: 1
   StartInOfflineMode: 0
-  RpcList: []
+  RpcList:
+  - ClickRpc
+  - DestroyRpc
+  - DestroySpaceship
+  - Fire
+  - RespawnSpaceship
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0
