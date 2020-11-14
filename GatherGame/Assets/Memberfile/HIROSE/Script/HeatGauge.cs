@@ -18,7 +18,7 @@ public class HeatGauge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gauge = control.HP;
+        gauge = PlayerControl.HP;
         image.GetComponent<Image>().fillAmount = gauge / 100.0f;
     }
 }
