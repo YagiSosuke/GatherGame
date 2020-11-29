@@ -1,14 +1,19 @@
 Win64
 PlayerPath?
-C:/Users/1823121/Desktop/新しいフォルダー/GatherGame.exe
+C:/Users/1823121/Desktop/集暖行動/GatherGame.exe
 SceneListBegin?
-Assets/Memberfile/Sato/Scenes/Test.unity
+Assets/Memberfile/Sato/Scenes/Title.unity
+Assets/Memberfile/Sato/Scenes/Stage.unity
+Assets/Memberfile/Sato/Scenes/Sousa.unity
+Assets/Memberfile/Sato/Scenes/Credit.unity
+Assets/Memberfile/Sato/Scenes/Risalt.unity
 SceneListEnd?
 80d2851602cb4bcb6f559596c5eb955b PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.PlayerListCell
 71bb6a6b6c8f052f948db64c7dd3ca4f PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.PunTeams
 5368b7e7dcd90b879d5fef2f71dd20a4 Assembly-CSharp.dll:.DetectUnknownControllerMappings
 74494c459d8da1b3c2f0349d1d8534aa PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.DocLinkButton
 ab039a385ef4459756519a3fe91dccc6 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.SmoothSyncMovement
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SampleScene
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 4f417ca0a3b31b376eb402726c240bde PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.RegionListView
 afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.PlayerMoveDPad
@@ -113,6 +118,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 267e1e00a8f1d106bd614339db235595 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.PunCockpit
 48de6ec90c5ec771a0105341422915e5 Assembly-CSharp.dll:Photon.Realtime.Demo.ConnectAndJoinRandomLb
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HeatGauge
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GameSystem
 ba160f8fe96116c81151a9a24d7d9f4f PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.RoomListCell
 c87a2744a4fec8052f557862b102c4e4 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.FriendListCell
 71bb6a6b6c8f052f948db64c7dd3ca4f PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Procedural.IngameControlPanel
@@ -153,6 +159,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 71bb6a6b6c8f052f948db64c7dd3ca4f PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.WebRpcImplementationExample
+c6a4cbda9b015a355136b330e9f942ba Assembly-CSharp.dll:.Play
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 0927e41b46e1bd11671f9b5adda4b832 PhotonUnityNetworking.dll:Photon.Pun.PhotonRigidbody2DView
 71bb6a6b6c8f052f948db64c7dd3ca4f PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.OnStartDelete
@@ -168,13 +175,16 @@ b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 71bb6a6b6c8f052f948db64c7dd3ca4f PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomIsVisibleToggle
 f8f5c34557f4103b6547d8f956cec6ea PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.SlotRacer.PlayerControl
 c656dcc13ae391b68d594cc8f9c590b0 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.BestRegionInPrefsProperty
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Clear
 c656dcc13ae391b68d594cc8f9c590b0 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomPlayerTtlProperty
+e98f93ff66aa331a52c6b0bcbfa699e5 Assembly-CSharp.dll:.PlayerCameras
 887d4be367910f97bc3679633e927586 Assembly-CSharp.dll:.control
 f941c3a384168571b7d90f58ec4986bc PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.InfosPanelPlaceholder
 71bb6a6b6c8f052f948db64c7dd3ca4f PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CurrentRoomIsOpenToggle
 afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.Player
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Photon.Chat.UtilityScripts.EventSystemSpawner
+e7401e6c2a6ec356a40172e20b54a0d7 Assembly-CSharp.dll:.Test
 57d2b3ca58a430f7cf319bb757c1f0f5 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.OnClickInstantiate
 c656dcc13ae391b68d594cc8f9c590b0 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CloudRegionProperty
 ee84478990d29c6d64a8d3003b44725c PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.PlayerOverviewPanel
@@ -242,6 +252,7 @@ e1300922cc039f41ab46a47f4cb05898 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.TestResultRendererCallback
 ae1347d9113eee8b83c5c8047dcf31a8 Assembly-CSharp.dll:.FriendItem
+e98f93ff66aa331a52c6b0bcbfa699e5 Assembly-CSharp.dll:.PlayerCamera
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -276,10 +287,12 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 c5fd97cc10b89deaf7c60af66a6b0d5a PhotonRealtime.dll:Photon.Realtime.SupportLogger
 3f600ad0f750f59238a91f7513b927c1 PhotonUnityNetworking.dll:Photon.Pun.PhotonTransformViewClassic
 71bb6a6b6c8f052f948db64c7dd3ca4f PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CrcCheckToggle
+b63f39f0b41801046fb7fd0fbf8a1722 Assembly-CSharp.dll:.PlayerControl
 71bb6a6b6c8f052f948db64c7dd3ca4f PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.OnPointerOverTooltip
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Photon.Chat.UtilityScripts.OnStartDelete
 00c99ff3f40bd11590c670580e513825 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.PhotonTeamsManager
 c656dcc13ae391b68d594cc8f9c590b0 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.IsConnectedAndReadyProperty
+8e3c7fef7a7326745081b64b6298c845 Assembly-CSharp.dll:.HotCircles
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.PlayerMoveRstick
 2b53d93770b9036b2fd1c7854560bc69 PhotonUnityNetworking.Utilities.dll:Photon.Pun.UtilityScripts.MoveByKeys
@@ -313,4 +326,5 @@ e4aa02db6487ad3aebb8e2f22ee6b699 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo
 491877540590e03bc0107ec60a521be4 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.Forms.UserIdUiForm
 c656dcc13ae391b68d594cc8f9c590b0 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Cockpit.CountOfRoomsProperty
 f0c4eb24258257daca58a9939f0894d2 PhotonUnityNetworking.Demos.dll:Photon.Pun.Demo.Asteroids.LobbyTopPanel
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SampleScene
+406cf253a2ae9d5c3a22b4613a3e968e Assembly-CSharp.dll:.Risalt
+8b97a7b53e0c59361e596ae60886ca99 Assembly-CSharp.dll:.CountDown
