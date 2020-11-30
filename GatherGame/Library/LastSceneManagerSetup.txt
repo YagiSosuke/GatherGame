@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Memberfile/Sato/Scenes/Stage.unity
+- path: Assets/Memberfile/Sato/Scenes/Sousa.unity
   isLoaded: 1
   isActive: 1
