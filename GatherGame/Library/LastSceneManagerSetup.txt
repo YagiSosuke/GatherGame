@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Memberfile/Sato/Scenes/Title.unity
+=======
+- path: Assets/Memberfile/Iwamura/Penguin/SampleScene.unity
+>>>>>>> eito
   isLoaded: 1
   isActive: 1
