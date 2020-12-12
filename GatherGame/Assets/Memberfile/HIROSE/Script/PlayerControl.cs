@@ -16,15 +16,21 @@ public class PlayerControl : MonoBehaviour
     public float span = 3f;//間隔
     public float currentTime;//時間計測
 
+    public float speed = 10.0f;
+    public Rigidbody rb;
+
     void Start()
     {
         check = false;
         move = true;
         HP = 100;
         currentTime = 0;
+
+        rb = GetComponent<Rigidbody>();
     }
     void Update()
     {
+        
         if (move)
         {
             // WASD入力から、XZ平面(水平な地面)を移動する方向(velocity)を得ます
@@ -37,10 +43,10 @@ public class PlayerControl : MonoBehaviour
                 velocity.z -= 1;
             if (Input.GetKey(KeyCode.D))
                 velocity.x += 1;
-        }
         
         // 速度ベクトルの長さを1秒でmoveSpeedだけ進むように調整します
         velocity = velocity.normalized * moveSpeed * Time.deltaTime;
+        }
 
         // いずれかの方向に移動している場合
         if (velocity.magnitude > 0)
@@ -90,11 +96,24 @@ public class PlayerControl : MonoBehaviour
             move = true;
         }
     }
+    /*
+    void FixedUpdate()
+    {
+        if (move)
+        {
+            float x = Input.GetAxis("Horizontal") * speed;
+            float z = Input.GetAxis("Vertical") * speed;
+            rb.AddForce(x, 0, z);
+        }
+    }
+    */
+
 
     private void OnTriggerEnter(Collider other)
     {
         currentTime = 0f;
     }
+
 
     void OnTriggerStay(Collider other)
     {

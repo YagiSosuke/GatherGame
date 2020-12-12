@@ -241,4 +241,3 @@ C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonWebSocket.cspro
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonWebSocket.csproj.CopyComplete
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonWebSocket.dll
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonWebSocket.pdb
-C:\Users\1823063\Documents\GatherGame\GatherGame\Temp\bin\Debug\Boo.Lang.dll
