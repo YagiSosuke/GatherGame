@@ -1,8 +1,12 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Memberfile/Sato/Scenes/Title.unity
 =======
 - path: Assets/Memberfile/Iwamura/Penguin/SampleScene.unity
 >>>>>>> eito
+=======
+- path: Assets/Memberfile/Sato/Scenes/Sousa.unity
+>>>>>>> 0e9556d742bf3246ccd6b38d8d7cfe6e01c5bd9a
   isLoaded: 1
   isActive: 1
