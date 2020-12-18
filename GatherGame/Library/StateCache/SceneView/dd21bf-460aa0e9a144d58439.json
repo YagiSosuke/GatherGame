@@ -1,5 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":false,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":925.680419921875,"y":-215.2896728515625,"z":-1686.600341796875},"rotation":{"x":0.00767563097178936,"y":0.9908664226531982,"z":-0.11828181147575379,"w":0.06429911404848099},"size":2978.048828125,"orthographic":false}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":false,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.0,"y":0.010000228881835938,"z":0.0},"rotation":{"x":-0.09464836120605469,"y":0.02149810455739498,"z":-0.002044584136456251,"w":-0.9952765107154846},"size":28.57884407043457,"orthographic":false}
 >>>>>>> 0e9556d742bf3246ccd6b38d8d7cfe6e01c5bd9a
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":false,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.0,"y":0.010000228881835938,"z":0.0},"rotation":{"x":-0.09464836120605469,"y":0.02149810455739498,"z":-0.002044584136456251,"w":-0.9952765107154846},"size":28.57884407043457,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":false,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":925.680419921875,"y":-215.2896728515625,"z":-1686.600341796875},"rotation":{"x":0.00767563097178936,"y":0.9908664226531982,"z":-0.11828181147575379,"w":0.06429911404848099},"size":2978.048828125,"orthographic":false}
+>>>>>>> 69ed073af1026b4bd0cde5488f36da1d2aa68efe
+>>>>>>> master
