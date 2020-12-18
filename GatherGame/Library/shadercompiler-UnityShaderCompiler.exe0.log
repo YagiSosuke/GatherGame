@@ -1,26 +1,11 @@
-<<<<<<< HEAD
 Base path: C:/Program Files/Unity/Hub/Editor/2018.4.22f1/Editor/Data
 Cmd: initializeCompiler
-=======
-Base path: C:/Program Files/Unity/Hub/Editor/2018.3.0f2/Editor/Data
->>>>>>> eito
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+Cmd: preprocess
+  insize=3207 outsize=1205 ok=1
+Cmd: preprocess
+  insize=8258 outsize=3110 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
