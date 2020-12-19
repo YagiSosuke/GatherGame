@@ -12,17 +12,17 @@ public class GameSystem : MonoBehaviour
     //　スタートボタンを押したら実行する
     public void GameStart()
     {
-        SceneManager.LoadScene("Stage");
+        FadeScript.FadeIn("Stage");
     }
 
     public void Sousa()
     {
-        SceneManager.LoadScene("Sousa");
+        FadeScript.FadeIn("Sousa");
     }
 
     public void Credit()
     {
-        SceneManager.LoadScene("Credit");
+        FadeScript.FadeIn("Credit");
     }
 
     public void GameEnd()
@@ -36,6 +36,6 @@ public class GameSystem : MonoBehaviour
 
     public void Title()
     {
-        SceneManager.LoadScene("Title");
+        FadeScript.FadeIn("Title");
     }
 }
