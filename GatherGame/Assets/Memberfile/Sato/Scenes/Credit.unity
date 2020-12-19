@@ -361,6 +361,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1155080913}
+        m_MethodName: PlayButtonSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &527408523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,6 +485,7 @@ GameObject:
   - component: {fileID: 1155080911}
   - component: {fileID: 1155080910}
   - component: {fileID: 1155080909}
+  - component: {fileID: 1155080913}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -561,6 +573,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1155080913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155080908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb9babdc2dbae741aa2ce011e7e8b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoudObject: {fileID: 6491894006358714030, guid: dd4a321bf0e5f794883b368969984804,
+    type: 3}
 --- !u!1 &1675195721
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +599,7 @@ GameObject:
   - component: {fileID: 1675195723}
   - component: {fileID: 1675195722}
   - component: {fileID: 1675195725}
+  - component: {fileID: 1675195726}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -740,3 +767,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1675195726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675195721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cd36c31acb4c44fa6cf837c4b6e6cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeCanvas: {fileID: 4823458182748607311, guid: 0d42027493434a147931e04046447e84,
+    type: 3}
+  Panelcolor: {r: 0, g: 0, b: 0, a: 1}
+  FadeSpeed: 1

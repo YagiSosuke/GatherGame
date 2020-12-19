@@ -443,6 +443,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 435807231}
+        m_MethodName: PlayButtonSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &232455421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,6 +745,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 435807231}
+        m_MethodName: PlayButtonSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &293149032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -863,6 +885,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 308463707}
         m_MethodName: GameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 435807231}
+        m_MethodName: PlayButtonSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1141,6 +1174,7 @@ GameObject:
   - component: {fileID: 435807229}
   - component: {fileID: 435807228}
   - component: {fileID: 435807227}
+  - component: {fileID: 435807231}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1232,6 +1266,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &435807231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435807226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb9babdc2dbae741aa2ce011e7e8b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoudObject: {fileID: 6491894006358714030, guid: dd4a321bf0e5f794883b368969984804,
+    type: 3}
 --- !u!1001 &461777356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1882,6 +1930,7 @@ GameObject:
   - component: {fileID: 951046429}
   - component: {fileID: 951046428}
   - component: {fileID: 951046431}
+  - component: {fileID: 951046432}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2049,6 +2098,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &951046432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951046427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cd36c31acb4c44fa6cf837c4b6e6cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeCanvas: {fileID: 4823458182748607311, guid: 0d42027493434a147931e04046447e84,
+    type: 3}
+  Panelcolor: {r: 0, g: 0, b: 0, a: 1}
+  FadeSpeed: 1
 --- !u!1 &1108457973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3994797250561616227, guid: bf29d6e15f6430949a03206e1dec5fdc,
@@ -2628,6 +2693,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: GameStart
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 435807231}
+        m_MethodName: PlayButtonSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1428091131
