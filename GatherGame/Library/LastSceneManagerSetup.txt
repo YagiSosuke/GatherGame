@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Memberfile/Sato/Scenes/Title.unity
+- path: Assets/Memberfile/Sato/Scenes/Credit.unity
   isLoaded: 1
   isActive: 1
