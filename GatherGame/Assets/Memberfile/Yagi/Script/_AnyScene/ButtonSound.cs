@@ -6,13 +6,16 @@ using UnityEngine;
 
 public class ButtonSound : MonoBehaviour
 {
-    [SerializeField] GameObject SoudObject;
-    GameObject Instance;
+    AudioSource ButtonAudio;
+
+    void Start()
+    {
+        ButtonAudio = GetComponent<AudioSource>();
+    }
 
     //ボタンを押した時の音を鳴らす
     public void PlayButtonSound()
     {
-        Instance = Instantiate(SoudObject.gameObject);
-        Invoke("Destroy(Instance)", 1.0f);
+        ButtonAudio.Play();
     }
 }

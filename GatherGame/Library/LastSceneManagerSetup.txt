@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Memberfile/Yagi/Scene/YagiTest.unity
+=======
+- path: Assets/Memberfile/Sato/Scenes/Title.unity
+>>>>>>> 1fb619c3a40f054d3721896e9f04b380a9994666
   isLoaded: 1
   isActive: 1
