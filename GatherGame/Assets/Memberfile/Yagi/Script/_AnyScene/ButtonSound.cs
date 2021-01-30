@@ -7,6 +7,7 @@ using UnityEngine;
 public class ButtonSound : MonoBehaviour
 {
     AudioSource ButtonAudio;
+    [SerializeField] AudioClip clip;
 
     void Start()
     {
@@ -16,6 +17,6 @@ public class ButtonSound : MonoBehaviour
     //ボタンを押した時の音を鳴らす
     public void PlayButtonSound()
     {
-        ButtonAudio.Play();
+        ButtonAudio.PlayOneShot(clip);
     }
 }

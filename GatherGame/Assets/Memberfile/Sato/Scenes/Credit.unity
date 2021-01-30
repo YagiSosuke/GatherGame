@@ -1543,6 +1543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb9babdc2dbae741aa2ce011e7e8b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 0}
 --- !u!1 &1202268623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,7 +1930,6 @@ MonoBehaviour:
   FadeCanvas: {fileID: 4823458182748607311, guid: 0d42027493434a147931e04046447e84,
     type: 3}
   Panelcolor: {r: 0, g: 0, b: 0, a: 1}
-  FadeSpeed: 1
 --- !u!1 &1771532777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,7 +2182,7 @@ PrefabInstance:
     - target: {fileID: 5539799842075528595, guid: 0ad996297640d7e4a83a2e9dc22c2184,
         type: 3}
       propertyPath: m_Name
-      value: Button
+      value: TitleButton
       objectReference: {fileID: 0}
     - target: {fileID: 5539799842075528595, guid: 0ad996297640d7e4a83a2e9dc22c2184,
         type: 3}

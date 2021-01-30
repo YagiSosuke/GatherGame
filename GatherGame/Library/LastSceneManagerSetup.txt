@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Memberfile/Sato/Scenes/Title.unity
+- path: Assets/Scenes/SampleScene.unity
   isLoaded: 1
   isActive: 1

@@ -15,6 +15,18 @@ public class GameSystem : MonoBehaviour
         FadeScript.FadeIn("Stage");
     }
 
+    //ゲームスタート - 操作方法を確認する場合
+    public void GameStart_OpYes()
+    {
+        FadeScript.FadeIn("Sousa");
+    }
+
+    //ゲームスタート - 操作方法を確認しない場合
+    public void GameStart_OpNo()
+    {
+        FadeScript.FadeIn("Stage");
+    }
+
     public void Sousa()
     {
         FadeScript.FadeIn("Sousa");
