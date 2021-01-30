@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GatherGame/Library/PackageCache/com.unity.collab-proxy@1.2.15/Editor.meta
+guid: d31e5d760880a4e52a3a75322481d0d2
+=======
 guid: 3354bd329d5832843a6922930c995ed6
+>>>>>>> 1fb619c3a40f054d3721896e9f04b380a9994666:GatherGame/Assets/Memberfile/Iwamura/Image.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
