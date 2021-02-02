@@ -12,7 +12,15 @@ public class GameSystem : MonoBehaviour
     //　スタートボタンを押したら実行する
     public void GameStart()
     {
-        FadeScript.FadeIn("Stage");
+        if (Application.internetReachability == NetworkReachability.NotReachable)
+        {
+            //機内モードなど、ネットワークエラー時
+            GameObject.Find("NetworkErrorPanel").GetComponent<NetworkPanel>().OpenPanel();
+        }
+        else {
+            //ネットワーク接続OK状態
+            FadeScript.FadeIn("Stage");
+        }
     }
 
     //ゲームスタート - 操作方法を確認する場合
