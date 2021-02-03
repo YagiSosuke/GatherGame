@@ -2159,7 +2159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "W,A,S,D\n\u53F3\u30AF\u30EA\u30C3\u30AF+\u30C9\u30E9\u30C3\u30B0\nEsc"
+  m_Text: "W,A,S,D\n\u30AF\u30EA\u30C3\u30AF+\u30C9\u30E9\u30C3\u30B0\nEsc"
 --- !u!222 &1214396022
 CanvasRenderer:
   m_ObjectHideFlags: 0
