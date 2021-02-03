@@ -11,9 +11,11 @@ public class PenguinSoundPlay : MonoBehaviour
     AudioSource audio;
 
     [SerializeField] AudioClip WalkAudio;
+    [SerializeField] AudioClip FleezeAudio;
 
     //再生中かどうかのフラグ
-    bool PlayF = false;
+    bool WalkPlayF = false;
+    bool FleezePlayF = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,23 +27,37 @@ public class PenguinSoundPlay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        //凍っていないとき
+        if (play.Move)
         {
-            //再生されていない かつ 凍っていない場合
-            if (!PlayF && play.Move)
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             {
-                audio.clip = WalkAudio;
-                audio.Play();
-            }
-            //凍った場合
-            else if (!play.Move) audio.Stop();
+                //再生されていない場合
+                if (!WalkPlayF)
+                {
+                    audio.clip = WalkAudio;
+                    audio.Play();
+                }
 
-            PlayF = true;
+                WalkPlayF = true;
+            }
+            else
+            {
+                WalkPlayF = false;
+                audio.Stop();
+            }
+            FleezePlayF = false;
         }
+        //凍った場合
         else
         {
-            PlayF = false;
-            audio.Stop();
+            if (!FleezePlayF)
+            {
+                audio.Stop();
+                audio.PlayOneShot(FleezeAudio);
+                FleezePlayF = true;
+            }
+            WalkPlayF = false;
         }
     }
 }

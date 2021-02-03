@@ -610,6 +610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WalkAudio: {fileID: 8300000, guid: 7efa3147537302544aeec48e2f780bd1, type: 3}
+  FleezeAudio: {fileID: 8300000, guid: 55a9d3f7cfd02484eb04333bd57bd397, type: 3}
 --- !u!1 &4100204797338442443
 GameObject:
   m_ObjectHideFlags: 0
