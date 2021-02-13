@@ -14,8 +14,7 @@ public class IceBreak : MonoBehaviour
     Vector3 AfterScale;
 
     //氷のオブジェクト
-    [SerializeField] GameObject Ice;
-    [SerializeField] GameObject Hole;
+    [SerializeField] GameObject Snow;
 
     //割れる効果音
     AudioSource audio;
@@ -23,8 +22,8 @@ public class IceBreak : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BeforeScale = new Vector3(0, 297, 1605);
-        AfterScale = new Vector3(Scale_x, 297, 1605);
+        BeforeScale = new Vector3(595, 297, 1605);
+        AfterScale = new Vector3(595, 0, 1605);
 
         audio = GetComponent<AudioSource>();
     }
@@ -34,15 +33,15 @@ public class IceBreak : MonoBehaviour
     {
         if (BreakF)
         {
-            Ice.transform.localScale = Vector3.Lerp(BeforeScale, AfterScale, count);
 
             if (count < 1.0f)
             {
+                Snow.transform.localScale = Vector3.Lerp(BeforeScale, AfterScale, count);
                 count += Time.deltaTime * 5.0f;
             }
             else
             {
-                count = 1.0f;
+                Snow.SetActive(false);
             }
         }
     }
@@ -55,7 +54,6 @@ public class IceBreak : MonoBehaviour
             if (!BreakF)
             {
                 BreakF = true;
-                Hole.SetActive(true);
                 audio.Play();
             }
         }

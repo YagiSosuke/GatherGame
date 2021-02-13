@@ -8,7 +8,8 @@ public class FallInWater : MonoBehaviour
 {
     Rigidbody ObjRB;
     AudioSource audio;
-    [SerializeField]AudioClip DamageSound;
+    [SerializeField] AudioClip DamageSound;
+    [SerializeField] GameObject CircleObject;
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +33,9 @@ public class FallInWater : MonoBehaviour
             moveVec = new Vector3(moveVec.x, 0, moveVec.z);
             ObjRB.AddForce(moveVec);
             audio.PlayOneShot(DamageSound);
+            CircleObject.transform.localScale = Vector3.zero;
 
-            Invoke("VelocityStop", 0.2f);
+            Invoke("VelocityStop", 0.1f);
         }
     }
 

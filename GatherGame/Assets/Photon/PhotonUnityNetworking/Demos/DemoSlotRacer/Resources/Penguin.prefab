@@ -781,7 +781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34def63fcd848f642a5ccdbc77031661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSound: {fileID: 8300000, guid: 60471daabe6bb1c479b01f3b6052da59, type: 3}
+  DamageSound: {fileID: 8300000, guid: 2a0f364062706d044969acd714528fa0, type: 3}
+  CircleObject: {fileID: 2519649315366578330}
 --- !u!82 &1616829830532979448
 AudioSource:
   m_ObjectHideFlags: 0
