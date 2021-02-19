@@ -6,7 +6,7 @@ using UnityEngine;
 public class Play : MonoBehaviourPunCallbacks
 {
     [SerializeField] private Vector3 velocity;              // 移動方向
-    [SerializeField] private float moveSpeed = 5.0f;        // 移動速度
+    [SerializeField] public float moveSpeed = 5.0f;        // 移動速度
     [SerializeField] private float applySpeed = 0.2f;       // 振り向きの適用速度
     PlayerCameras script;  // カメラの水平回転を参照する用
     GameObject Camera;
