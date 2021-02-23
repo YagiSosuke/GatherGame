@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 
-public class WindController : MonoBehaviour
+/*風をコントロールする*/
+
+public class WindController : MonoBehaviourPunCallbacks, IPunObservable
 {
     //風が吹く間隔
     [SerializeField] float intervalMAX = 20;
@@ -35,23 +39,26 @@ public class WindController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        count += Time.deltaTime;
+        if (photonView.IsMine)
+        {
+            count += Time.deltaTime;
 
-        if (!WindF)
-        {
-            if (interval < count)
+            if (!WindF)
             {
-                WindF = true;
-                audio.PlayOneShot(windAudio);
-                count = 0;
+                if (interval < count)
+                {
+                    WindF = true;
+                    audio.PlayOneShot(windAudio);
+                    count = 0;
+                }
             }
-        }
-        else
-        {
-            if(WindTime < count)
+            else
             {
-                WindF = false;
-                WindSetting();
+                if (WindTime < count)
+                {
+                    WindF = false;
+                    WindSetting();
+                }
             }
         }
     }
@@ -68,5 +75,22 @@ public class WindController : MonoBehaviour
         float pz = Mathf.Sin(rad);
         WindAngle = new Vector3(px, 0, pz);
 
+    }
+
+    //データ送受信
+    void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            //生成側、送信の処理
+            stream.SendNext(WindF);
+            stream.SendNext(WindAngle);
+        }
+        else
+        {
+            //非生成側、受信の処理
+            WindF = (bool)stream.ReceiveNext();
+            WindAngle = (Vector3)stream.ReceiveNext();
+        }
     }
 }

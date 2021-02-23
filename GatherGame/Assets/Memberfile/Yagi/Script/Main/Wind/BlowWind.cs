@@ -1,19 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 
 /*風が吹いた時にペンギンを動かす*/
 
-public class BlowWind : MonoBehaviour
+public class BlowWind : MonoBehaviourPunCallbacks
 {
     Rigidbody rb;
     WindController windScript;
+    
+    //風が吹いたかどうかのフラグ
+    bool WindYetF = false;
+
+    Play playscript;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         windScript = GameObject.Find("WindObject").GetComponent<WindController>();
+        playscript = GetComponent<Play>();
     }
 
     // Update is called once per frame
@@ -21,18 +29,23 @@ public class BlowWind : MonoBehaviour
     {
         if (windScript.WindF)
         {
-            if (windScript.count == 0)
+            //動ける場合
+            if (playscript.Move)
             {
-                rb.AddForce(rb.velocity + windScript.WindAngle * windScript.WindPower);
-                //rb.AddForce(rb.velocity + new Vector3(0, 0, 300f));
+                //風がまだ吹いていない場合
+                if (!WindYetF)
+                {
+                    if (photonView.IsMine)
+                    {
+                        rb.AddForce(rb.velocity + windScript.WindAngle * windScript.WindPower);
+                        WindYetF = true;
+                    }
+                }
             }
         }
         else
         {
-            if (windScript.count == 0)
-            {
-                rb.velocity = Vector3.zero;
-            }
+            WindYetF = false;
         }
     }
 }
