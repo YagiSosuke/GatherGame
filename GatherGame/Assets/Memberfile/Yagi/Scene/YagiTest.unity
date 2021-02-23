@@ -3199,7 +3199,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1645714233
 Transform:
@@ -3222,7 +3222,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645714232}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5253b39f95bc0e14ca51240422f64143, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3

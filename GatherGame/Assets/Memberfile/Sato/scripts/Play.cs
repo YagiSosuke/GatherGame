@@ -14,6 +14,8 @@ public class Play : MonoBehaviourPunCallbacks
     public bool Move;
     public static bool Riselt;
 
+    Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,8 @@ public class Play : MonoBehaviourPunCallbacks
         script = Camera.GetComponent<PlayerCameras>();
         Move = true;
         Riselt = false;
+
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -53,7 +57,11 @@ public class Play : MonoBehaviourPunCallbacks
                     transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(script.hRotation * velocity) * Quaternion.Euler(0, 90, 0), applySpeed);
                     // プレイヤーの位置(transform.position)の更新
                     // カメラの水平回転(refCamera.hRotation)で回した移動方向(velocity)を足し込みます
-                    transform.position += script.hRotation * velocity;
+                    //transform.position += script.hRotation * velocity;
+                    if (rb.velocity.magnitude < 15)
+                    {
+                        rb.AddForce(script.hRotation * velocity);
+                    }
                 }
                 else
                     animator.Play("Default Take");
