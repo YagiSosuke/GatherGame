@@ -45,6 +45,6 @@ public class DebugMenuScript : MonoBehaviour
     //スライダーが動いたら
     public void SliderMove()
     {
-        playscript.moveSpeed = slider.value * 15 + 5;
+        playscript.moveSpeed = slider.value * 300 + 300;
     }
 }
