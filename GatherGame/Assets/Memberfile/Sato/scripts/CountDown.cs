@@ -45,6 +45,7 @@ public class CountDown : MonoBehaviourPunCallbacks
             }
             if (totalTime <0)
             {
+                PhotonNetwork.Disconnect();     //八木が追加,Photonネットワークから切断
                 SceneManager.LoadScene("Risalt");
             }
         }
