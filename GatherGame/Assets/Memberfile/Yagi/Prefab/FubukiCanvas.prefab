@@ -30,7 +30,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 270433322296663300}
+  - {fileID: 1327667113240350690}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1001 &3409292221846720312
+--- !u!1001 &4538549453928144350
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -211,36 +211,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6174447728618780450, guid: d76a5c2465640b24196e4870b248213e,
-        type: 3}
-      propertyPath: m_BlocksRaycasts
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6174447728618780450, guid: d76a5c2465640b24196e4870b248213e,
-        type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6186469044859486999, guid: d76a5c2465640b24196e4870b248213e,
         type: 3}
       propertyPath: m_Name
       value: FubukiImages
       objectReference: {fileID: 0}
-    - target: {fileID: 6662362171926771573, guid: d76a5c2465640b24196e4870b248213e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6825922604195870710, guid: d76a5c2465640b24196e4870b248213e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d76a5c2465640b24196e4870b248213e, type: 3}
---- !u!224 &270433322296663300 stripped
+--- !u!224 &1327667113240350690 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3211339874964001340, guid: d76a5c2465640b24196e4870b248213e,
     type: 3}
-  m_PrefabInstance: {fileID: 3409292221846720312}
+  m_PrefabInstance: {fileID: 4538549453928144350}
   m_PrefabAsset: {fileID: 0}
