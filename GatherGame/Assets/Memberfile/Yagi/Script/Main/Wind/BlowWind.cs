@@ -14,6 +14,10 @@ public class BlowWind : MonoBehaviourPunCallbacks
     //風が吹いたかどうかのフラグ
     bool WindYetF = false;
 
+    //吹雪画像を表示するスクリプト
+    FubukiImage fubukiImageScript;
+
+    //凍ってないかどうかの判定に必要
     Play playscript;
 
     // Start is called before the first frame update
@@ -22,6 +26,8 @@ public class BlowWind : MonoBehaviourPunCallbacks
         rb = GetComponent<Rigidbody>();
         windScript = GameObject.Find("WindObject").GetComponent<WindController>();
         playscript = GetComponent<Play>();
+
+        fubukiImageScript = GameObject.Find("FubukiImages").GetComponent<FubukiImage>();
     }
 
     // Update is called once per frame
@@ -29,17 +35,19 @@ public class BlowWind : MonoBehaviourPunCallbacks
     {
         if (windScript.WindF)
         {
-            //動ける場合
-            if (playscript.Move)
+            //風がまだ吹いていない場合
+            if (!WindYetF)
             {
-                //風がまだ吹いていない場合
-                if (!WindYetF)
+                if (photonView.IsMine)
                 {
-                    if (photonView.IsMine)
+                    fubukiImageScript.FubukiAnimation();
+
+                    //動ける場合
+                    if (playscript.Move)
                     {
                         rb.AddForce(rb.velocity + windScript.WindAngle * windScript.WindPower);
-                        WindYetF = true;
                     }
+                    WindYetF = true;
                 }
             }
         }
