@@ -198,10 +198,64 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4204241830513151925}
     m_Modifications:
+    - target: {fileID: 100002, guid: 29f53dc0d61993a49aea13b5db7664ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865134506909788176, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865134506909788176, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865134506909788176, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865134506909788176, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865134506909788176, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865134506909788176, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865134506909788176, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2865134506909788176, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3409292221845420704, guid: 29f53dc0d61993a49aea13b5db7664ae,
         type: 3}
       propertyPath: m_Name
       value: FubukiCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3409292221845420706, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3409292221845420706, guid: 29f53dc0d61993a49aea13b5db7664ae,
+        type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3409292221845420708, guid: 29f53dc0d61993a49aea13b5db7664ae,
         type: 3}
