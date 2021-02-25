@@ -28,7 +28,7 @@ Shader "Shader Forge/TopDown" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles metal d3d11_9x 
+            //#pragma only_renderers d3d9 d3d11 glcore gles metal d3d11_9x 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform float4 _Top;
@@ -97,7 +97,7 @@ Shader "Shader Forge/TopDown" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles metal d3d11_9x 
+            //#pragma only_renderers d3d9 d3d11 glcore gles metal d3d11_9x 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform float4 _Top;
