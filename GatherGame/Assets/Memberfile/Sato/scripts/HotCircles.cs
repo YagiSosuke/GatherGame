@@ -8,7 +8,7 @@ public class HotCircles : MonoBehaviourPunCallbacks
     private GameObject parent;
     private Play playerMove;
 
-    private bool OnCircle;
+    public bool OnCircle;
 
     private Vector3 MaxCircleScale;
     private Vector3 MinCircleScale;

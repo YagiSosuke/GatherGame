@@ -17,7 +17,7 @@ public class FadeScript : MonoBehaviour
     
     [Space(10)]
     //フェードの速度管理
-    [SerializeField] float FadeSpeed = 1;
+    float FadeSpeed = 3;
     public static float count = 0;
 
     //フェード処理のフラグ
