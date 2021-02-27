@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Memberfile/Takawa/T_Scene/Takawa_test.unity
+  isLoaded: 1
+  isActive: 1
