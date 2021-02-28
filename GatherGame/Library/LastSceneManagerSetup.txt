@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Title.unity
+=======
+- path: Assets/Memberfile/Takawa/T_Scene/Takawa_test.unity
+>>>>>>> d796b5cde719925e2d9fb85ddb73469fb3aca4f0
   isLoaded: 1
   isActive: 1
