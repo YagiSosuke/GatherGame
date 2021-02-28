@@ -1,5 +1,6 @@
 Base path: C:/Program Files/Unity/Hub/Editor/2018.4.22f1/Editor/Data
 Cmd: initializeCompiler
+<<<<<<< HEAD
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: compileSnippet
@@ -18,3 +19,9 @@ Cmd: compileSnippet
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+=======
+<<<<<<< HEAD
+=======
+Cmd: initializeCompiler
+>>>>>>> d796b5cde719925e2d9fb85ddb73469fb3aca4f0
+>>>>>>> origin/八木2
