@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 
-public class Play : MonoBehaviourPunCallbacks
+public class Play : MonoBehaviourPunCallbacks, IPunObservable
 {
     [SerializeField] private Vector3 velocity;              // 移動方向
     [SerializeField] public float moveSpeed = 5.0f;        // 移動速度
@@ -36,7 +37,10 @@ public class Play : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        velocity =Vector3.zero;
+        velocity = Vector3.zero;
+        Debug.Log("Move = " + Move);
+
+        //自分が生成したものの処理
         if (photonView.IsMine)
         {
             if (Move == true)
@@ -71,9 +75,43 @@ public class Play : MonoBehaviourPunCallbacks
                 }
                 else
                     animator.Play("Default Take");
+
+                //氷が解けているとき
+                Initialize = true;
+                stop_ice.SetActive(false);
             }
             else {
                 animator.Play("Default Take");
+
+                if (Initialize == true)
+                {
+                    Debug.Log("氷のオブジェクト初期化");
+                    // transformを取得
+                    Transform ice_Transform = stop_ice.transform;
+                    Vector3 ice_scale = ice_Transform.localScale;
+                    ice_scale.x = 500;
+                    ice_scale.y = 500;
+                    ice_scale.z = 500;
+                    ice_Transform.localScale = ice_scale;
+                    stop_ice.SetActive(true);
+                    Initialize = false;
+                }
+                if (CountDown.totalTime >= 0)
+                {
+                    Ice_Ctrl();
+                }
+            }
+        }
+        else
+        {
+            if (Move)
+            {
+                //氷が解けているとき
+                Initialize = true;
+                stop_ice.SetActive(false);
+            }
+            else
+            {
                 if (Initialize == true)
                 {
                     Debug.Log("氷のオブジェクト初期化");
@@ -94,7 +132,6 @@ public class Play : MonoBehaviourPunCallbacks
             }
         }
     }
-    
     void Ice_Ctrl()
     {
         // transformを取得
@@ -110,5 +147,21 @@ public class Play : MonoBehaviourPunCallbacks
         //ice_scale.z = 1;
         ice_Transform.localScale = ice_scale;
         ice_Transform.position = ice_position;
+    }
+
+
+    //データ送受信メソッド
+    void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            //送信側
+            stream.SendNext(Move);
+        }
+        else
+        {
+            //受信側
+            Move = (bool)stream.ReceiveNext();
+        }
     }
 }
