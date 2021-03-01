@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private GameObject player;
+    private Transform player;
     private float XTime;
     private float ZTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.Find("Penguin(Clone)").transform;
         XTime = ZTime = 0; 
 
     }

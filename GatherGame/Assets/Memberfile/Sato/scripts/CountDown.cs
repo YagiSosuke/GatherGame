@@ -31,7 +31,7 @@ public class CountDown : MonoBehaviourPunCallbacks
             {
                 totalTime -= Time.deltaTime;
                 seconds = (int)totalTime;
-                timerText.text = "GameOverまで" + "\n\n" + seconds.ToString();
+                timerText.text = "完全に動けなくなるまで\n\n<size=120>"+seconds.ToString()+ "</size>";
             }
             else
             {

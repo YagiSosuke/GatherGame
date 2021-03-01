@@ -18,9 +18,9 @@ public class DebugMenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Circle = gameObject.transform.parent.parent.FindChild("Circle (1)").gameObject;
+        Circle = gameObject.transform.parent.parent.Find("Circle (1)").gameObject;
         HC = Circle.GetComponent<HotCircles>();
-        slider = gameObject.transform.FindChild("Image").FindChild("Slider").GetComponent<Slider>();
+        slider = gameObject.transform.Find("Image").Find("Slider").GetComponent<Slider>();
         playscript = gameObject.transform.parent.parent.GetComponent<Play>();
     }
 

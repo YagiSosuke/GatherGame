@@ -33,7 +33,7 @@ public class PlayerCameras : MonoBehaviour
             // 水平回転の更新
             if (Input.GetMouseButton(0))
                 hRotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * turnSpeed, 0);
-
+             
             // カメラの回転(transform.rotation)の更新
             // 方法1 : 垂直回転してから水平回転する合成回転とします
             transform.rotation = hRotation * vRotation;
