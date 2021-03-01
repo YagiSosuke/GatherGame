@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 
 public class HotCircles : MonoBehaviourPunCallbacks
 {
-    private GameObject parent;
+    [SerializeField] private GameObject parent;
     private Play playerMove;
 
     public bool OnCircle;
@@ -24,7 +25,7 @@ public class HotCircles : MonoBehaviourPunCallbacks
     void Start()
     {
         //親オブジェクトを取得
-        parent = GameObject.Find("Penguin(Clone)");
+        //parent = GameObject.Find("Penguin(Clone)");
         playerMove = parent.GetComponent<Play>();
 
         OnCircle = false;
@@ -52,18 +53,28 @@ public class HotCircles : MonoBehaviourPunCallbacks
             if (this.transform.localScale.x >= MaxCircleScale.x)
             {
                 this.transform.localScale = MaxCircleScale;
-              
+
             }
 
             if (this.transform.localScale.x <= MinCircleScale.x)
             {
                 this.transform.localScale = MinCircleScale;
                 playerMove.Move = false;
-                CountDown = true;
-            }
+                CountDown = true;            }
             else
             {
                 CountDown = false;
+                playerMove.Move = true;
+            }
+        }
+        else
+        {
+            if (this.transform.localScale.x <= MinCircleScale.x)
+            {
+                playerMove.Move = false;
+            }
+            else
+            {
                 playerMove.Move = true;
             }
         }

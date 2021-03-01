@@ -9,19 +9,23 @@ public class PenguinSoundPlay : MonoBehaviour
     //移動スクリプト
     Play play;
     AudioSource audio;
+    [SerializeField] AudioSource iceAudio;
 
     [SerializeField] AudioClip WalkAudio;
     [SerializeField] AudioClip FleezeAudio;
+    [SerializeField] AudioClip UnfleezeAudio;
 
     //再生中かどうかのフラグ
     bool WalkPlayF = false;
-    bool FleezePlayF = false;
+    bool FleezePlayF;
 
     // Start is called before the first frame update
     void Start()
     {
         play = GetComponent<Play>();
         audio = GetComponent<AudioSource>();
+
+        FleezePlayF = false;
     }
 
     // Update is called once per frame
@@ -46,15 +50,19 @@ public class PenguinSoundPlay : MonoBehaviour
                 WalkPlayF = false;
                 audio.Stop();
             }
-            FleezePlayF = false;
+            //氷が割れた音
+            if (FleezePlayF)
+            {
+                iceAudio.PlayOneShot(UnfleezeAudio);
+                FleezePlayF = false;
+            }
         }
         //凍った場合
         else
         {
             if (!FleezePlayF)
             {
-                audio.Stop();
-                audio.PlayOneShot(FleezeAudio);
+                iceAudio.PlayOneShot(FleezeAudio);
                 FleezePlayF = true;
             }
             WalkPlayF = false;
