@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.35172662, g: 0.8949794, b: 0.9811321, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -691,8 +691,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 144684055}
-  - {fileID: 2080236294}
   - {fileID: 1214396020}
+  - {fileID: 2080236294}
   m_Father: {fileID: 314078358}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0.0627451, g: 0.9019608, b: 0.972549, a: 0.7490196}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_Color: {r: 0.0627451, g: 0.9019608, b: 0.972549, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2093,12 +2093,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 365969306}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -225.7, y: -64.99997}
-  m_SizeDelta: {x: 98.626434, y: 65}
+  m_AnchoredPosition: {x: -178.1, y: -64.99997}
+  m_SizeDelta: {x: 193.764, y: 65}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1214396021
 MonoBehaviour:
@@ -2126,13 +2126,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 56
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "WASD\u30AD\u30FC\n\u30DE\u30A6\u30B9\nEsc\u30AD\u30FC"
+  m_Text: "WASD / \u2191\u2190\u2193\u2192\n\u30DE\u30A6\u30B9\nEsc"
 --- !u!222 &1214396022
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3099,7 +3099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.35172662, g: 0.8949794, b: 0.9811321, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3157,12 +3157,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 365969306}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -102.5, y: -64.99997}
-  m_SizeDelta: {x: 113.06802, y: 65}
+  m_AnchoredPosition: {x: 54, y: -64.99997}
+  m_SizeDelta: {x: 228.08145, y: 65}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2080236295
 MonoBehaviour:
@@ -3196,7 +3196,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u79FB\u52D5\n\u8996\u70B9\u79FB\u52D5\n\u30B2\u30FC\u30E0\u7D42\u4E86"
+  m_Text: "\u79FB\u52D5\n\u8996\u70B9\u79FB\u52D5\n\u3044\u3064\u3067\u3082\u30B2\u30FC\u30E0\u7D42\u4E86"
 --- !u!222 &2080236296
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3255,7 +3255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.35172662, g: 0.8949794, b: 0.9811321, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
