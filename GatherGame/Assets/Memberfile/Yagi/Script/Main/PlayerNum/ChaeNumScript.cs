@@ -5,18 +5,20 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*頭上に表示するプレイヤーナンバーを管理する*/
+
 public class ChaeNumScript : MonoBehaviourPunCallbacks, IPunObservable
 {
     GameObject camera;
     [SerializeField] Text NumText;
+    [SerializeField] GameObject YouText;
     [SerializeField] Outline line1;
+    [SerializeField] Outline line2;
 
     [SerializeField] Color[] TextColor;
 
     int id;
-
-    [SerializeField] float count = 0;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,37 +27,19 @@ public class ChaeNumScript : MonoBehaviourPunCallbacks, IPunObservable
         //id設定
         if (photonView.IsMine)
         {
-            id = PhotonNetwork.PlayerList.Length;
+            YouText.SetActive(true);
+            id = PhotonNetwork.CountOfPlayers;
             NumText.text = id + "P";
-            line1.effectColor = TextColor[id - 1];
+            line1.effectColor = line2.effectColor = TextColor[id - 1];
         }        
+        
+        
     }
-
-    void Update() {
-        if (photonView.IsMine)
-        {
-            count += Time.deltaTime;
-
-            if (count < 1.0f)
-            {
-                NumText.fontSize = 50;
-                NumText.text = id + "P";
-            }
-            else if (count < 2.0f)
-            {
-                NumText.fontSize = 35;
-                NumText.text = "あなた";
-            }
-            else
-            {
-                count = 0;
-            }
-        }
-    }
-
+    
     // Update is called once per frame
     void LateUpdate()
     {
+        //Debug.Log("IDcontroller.GetID(photonView.ViewID) = " + IDcontroller.GetID(photonView.ViewID));
         gameObject.transform.LookAt(camera.transform);
     }
 
