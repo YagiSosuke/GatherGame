@@ -38,7 +38,6 @@ public class Play : MonoBehaviourPunCallbacks, IPunObservable
     void Update()
     {
         velocity = Vector3.zero;
-        Debug.Log("Move = " + Move);
 
         //自分が生成したものの処理
         if (photonView.IsMine)
