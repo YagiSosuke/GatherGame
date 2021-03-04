@@ -244,3 +244,5 @@ C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.Demos.csproj.CopyComplete
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.Demos.dll
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.Demos.pdb
+C:\Users\1823122\Desktop\授業\３年\ゲームクリエイタ特訓\製作物\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.Demos.csprojResolveAssemblyReference.cache
+C:\Users\1823122\Desktop\授業\３年\ゲームクリエイタ特訓\製作物\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.Demos.dll

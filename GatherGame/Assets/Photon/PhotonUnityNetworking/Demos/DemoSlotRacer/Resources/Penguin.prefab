@@ -1433,6 +1433,7 @@ GameObject:
   - component: {fileID: 3369161097842851099}
   - component: {fileID: 3851538471721825366}
   - component: {fileID: 1903400641897341797}
+  - component: {fileID: 1731879387163610461}
   m_Layer: 0
   m_Name: Penguin
   m_TagString: Player
@@ -1687,6 +1688,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae8d0e9fa87ddf4298acd019de037c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1731879387163610461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100204797287520437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf6b8f6c3f3e83d48b90c7def1bf0ad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footPrintPrefab: {fileID: 4919315285936995527, guid: 3a08d458a1f12dd48b4d9ed392ed086e,
+    type: 3}
+  interval: 0.35
 --- !u!1 &4100204797338442443
 GameObject:
   m_ObjectHideFlags: 0
@@ -7563,15 +7579,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec35711304da91344aef38d4a7e20f30, type: 3}
---- !u!1 &4431383567094029142 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7783674215669864563, guid: ec35711304da91344aef38d4a7e20f30,
-    type: 3}
-  m_PrefabInstance: {fileID: 5871081572974330661}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4431383567093925750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7783674215669498963, guid: ec35711304da91344aef38d4a7e20f30,
+    type: 3}
+  m_PrefabInstance: {fileID: 5871081572974330661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4431383567094029142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7783674215669864563, guid: ec35711304da91344aef38d4a7e20f30,
     type: 3}
   m_PrefabInstance: {fileID: 5871081572974330661}
   m_PrefabAsset: {fileID: 0}

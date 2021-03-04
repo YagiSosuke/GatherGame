@@ -242,3 +242,4 @@ C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.csproj.CopyComplete
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.dll
 C:\Users\1823063\Documents\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.pdb
+C:\Users\1823122\Desktop\授業\３年\ゲームクリエイタ特訓\製作物\GatherGame\GatherGame\obj\Debug\PhotonUnityNetworking.dll
