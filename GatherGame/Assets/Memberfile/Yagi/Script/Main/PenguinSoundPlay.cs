@@ -62,6 +62,7 @@ public class PenguinSoundPlay : MonoBehaviour
         {
             if (!FleezePlayF)
             {
+                audio.Stop();
                 iceAudio.PlayOneShot(FleezeAudio);
                 FleezePlayF = true;
             }
