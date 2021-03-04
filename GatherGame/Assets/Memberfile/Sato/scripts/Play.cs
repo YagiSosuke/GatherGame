@@ -45,14 +45,10 @@ public class Play : MonoBehaviourPunCallbacks, IPunObservable
         {
             if (Move == true)
             {
-                if (Input.GetKey(KeyCode.W))
-                    velocity.z += 1;
-                if (Input.GetKey(KeyCode.A))
-                    velocity.x -= 1;
-                if (Input.GetKey(KeyCode.S))
-                    velocity.z -= 1;
-                if (Input.GetKey(KeyCode.D))
-                    velocity.x += 1;
+                float x = Input.GetAxisRaw("Horizontal");
+                float z = Input.GetAxisRaw("Vertical");
+                velocity.x += x;
+                velocity.z += z;
 
                 // 速度ベクトルの長さを1秒でmoveSpeedだけ進むように調整します
                 velocity = velocity.normalized * moveSpeed * Time.deltaTime;

@@ -38,12 +38,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991240298520492498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac3d695fbf348454a8d1962d7dc58740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IceBreakMAX: 70
+  IceBreakMAX: 100
   IceBreakCount: 0
   IceBreak: {fileID: 1274032156074160956, guid: ba0ae4365527aad42b0b7375be6e35dd,
     type: 3}

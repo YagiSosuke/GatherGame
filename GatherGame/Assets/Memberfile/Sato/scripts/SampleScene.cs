@@ -26,7 +26,7 @@ public class SampleScene : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         // マッチング後、ランダムな位置に自分自身のネットワークオブジェクトを生成する
-        var v = new Vector3(Random.Range(-2f, 2f), 0, Random.Range(-2f, 2f));
+        var v = new Vector3(260 + Random.Range(-2f, 2f), 0, -300 + Random.Range(-2f, 2f));
         GameObject Penguin = PhotonNetwork.Instantiate("Penguin", v, Quaternion.identity);
         On = true;
     }
