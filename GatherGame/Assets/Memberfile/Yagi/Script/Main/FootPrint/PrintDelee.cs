@@ -26,11 +26,11 @@ public class PrintDelee : MonoBehaviour
         time += Time.deltaTime;
         if(time < interval)
         {
-            foot.color = new Color(1, 1, 1, 0.75f);
+            foot.color = new Color(1, 1, 1, 0.3f);
         }
         else if(time < deleteTime)
         {
-            foot.color = Color.Lerp(new Color(1, 1, 1, 0.75f), new Color(1, 1, 1, 0), time-interval);
+            foot.color = Color.Lerp(new Color(1, 1, 1, 0.3f), new Color(1, 1, 1, 0), time-interval);
         }
         else
         {

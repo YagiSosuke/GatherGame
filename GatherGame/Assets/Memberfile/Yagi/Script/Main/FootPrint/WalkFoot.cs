@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 /*足跡を表示するプログラム*/
 
-public class WalkFoot : MonoBehaviour
+public class WalkFoot : MonoBehaviourPunCallbacks
 {
     public GameObject footPrintPrefab;
     float time = 0;
@@ -13,13 +15,16 @@ public class WalkFoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+        if (photonView.IsMine)
         {
-            time += Time.deltaTime;
-            if (time > interval)
+            if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {
-                time = 0;
-                Instantiate(footPrintPrefab, transform.position, transform.rotation);
+                time += Time.deltaTime;
+                if (time > interval)
+                {
+                    time = 0;
+                    PhotonNetwork.Instantiate("FootPrintPrefab", transform.position, transform.rotation);
+                }
             }
         }
     }
