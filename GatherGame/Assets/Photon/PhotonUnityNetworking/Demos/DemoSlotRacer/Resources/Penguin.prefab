@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 526516780}
-  ResetTime: 11
+  ResetTime: 16
 --- !u!114 &3150206719608061498
 MonoBehaviour:
   m_ObjectHideFlags: 0
