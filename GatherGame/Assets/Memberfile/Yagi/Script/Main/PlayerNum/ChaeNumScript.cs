@@ -18,22 +18,16 @@ public class ChaeNumScript : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField] Color[] TextColor;
 
     int id;
+
+    PlayerIDController IDcontroller;
     
     // Start is called before the first frame update
     void Start()
     {
         camera = GameObject.Find("Camera");
+        IDcontroller = GameObject.Find("PlayerNumObj").GetComponent<PlayerIDController>();
 
-        //id設定
-        if (photonView.IsMine)
-        {
-            YouText.SetActive(true);
-            id = PhotonNetwork.CountOfPlayers;
-            NumText.text = id + "P";
-            line1.effectColor = line2.effectColor = TextColor[id - 1];
-        }        
-        
-        
+        Invoke("PlayerNoSet", 0.2f);
     }
     
     // Update is called once per frame
@@ -42,6 +36,29 @@ public class ChaeNumScript : MonoBehaviourPunCallbacks, IPunObservable
         //Debug.Log("IDcontroller.GetID(photonView.ViewID) = " + IDcontroller.GetID(photonView.ViewID));
         gameObject.transform.LookAt(camera.transform);
     }
+    
+    //頭上のプレイヤー番号セット
+    void PlayerNoSet()
+    {
+        if (photonView.IsMine)
+        {
+            YouText.SetActive(true);
+            for(int i = 0; i < 20; i++)
+            {
+                //Debug.Log(i + " = " + IDcontroller.PlayerData[i].ActorNumber);
+                if (IDcontroller.PlayerData[i].ActorNumber == PhotonNetwork.LocalPlayer.ActorNumber)
+                {
+
+                    id = i + 1;
+                    break;
+                }
+            }
+            //Debug.Log("id = " + id);
+            NumText.text = id + "P";
+            line1.effectColor = line2.effectColor = TextColor[id - 1];
+        }
+    }
+    
 
     //データを送受信するメソッド
     void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
